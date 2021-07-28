@@ -35,13 +35,15 @@
                 </div>
                 <div class="col-8">
                     <figure class="slider d-flex align-items-center justify-content-center">
+                        <!-- ciclo for per gestire tutti gli url in images -->
                         <img class="img-fluid" v-for="(url, index) in images" :src="url" :class="isActive(index)"
                             alt="Immagine Dinamica">
                         <div id="dots-menu" class=" d-flex align-items-center justify-content-center">
-                            <div class="dot mx-2 cursor-pointer"></div>
-                            <div class="dot mx-2 cursor-pointer"></div>
-                            <div class="dot mx-2 cursor-pointer"></div>
-                            <div class="dot mx-2 cursor-pointer"></div>
+
+                            <!--stampo 4 dots utilizzando il ciclo for-->
+                            <div v-for="(dot, index) in images" class="dot mx-2 cursor-pointer"
+                                :class="isActive(index)">
+                            </div>
                         </div>
                     </figure>
                 </div>
