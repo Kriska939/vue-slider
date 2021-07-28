@@ -37,6 +37,12 @@
                     <figure class="slider d-flex align-items-center justify-content-center">
                         <img class="img-fluid" v-for="(url, index) in images" :src="url" :class="isActive(index)"
                             alt="Immagine Dinamica">
+                        <div id="dots-menu" class=" d-flex align-items-center justify-content-center">
+                            <div class="dot mx-2 cursor-pointer"></div>
+                            <div class="dot mx-2 cursor-pointer"></div>
+                            <div class="dot mx-2 cursor-pointer"></div>
+                            <div class="dot mx-2 cursor-pointer"></div>
+                        </div>
                     </figure>
                 </div>
                 <div class="col-2 d-flex align-items-center justify-content-center">

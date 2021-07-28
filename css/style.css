@@ -11,3 +11,27 @@
 .slider img.active {
     display: inline-block;
 }
+
+.slider {
+    position: relative;
+}
+
+#dots-menu {
+    background-color: rgba(0,0,0, 0.7);
+    padding: 10px;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 350px;
+    position: absolute;
+}
+
+#dots-menu .dot {
+    padding: 8px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#dots-menu .dot.active {
+    background-color: purple;
+}
