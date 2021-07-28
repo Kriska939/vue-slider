@@ -2,8 +2,10 @@
     cursor: pointer;
 }
 
+
 .slider img {
     display: none;
+    max-height: 400px;
 }
 
 .slider img.active {

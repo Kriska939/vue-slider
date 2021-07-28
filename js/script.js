@@ -20,8 +20,22 @@ const app = new Vue({
         ],
     },
     methods: {
+        // applico classe "active" all'index corrente: 
+
         isActive(index) {
             return this.indexStart === index ? "active" : "";
+        },
+
+        // funzione incremento index al click:
+
+        increaseIndex() {
+            this.indexStart++;
+        },
+
+        // funzione decremento index al click:
+
+        decreaseIndex() {
+            this.indexStart--;
         }
     },
 
