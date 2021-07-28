@@ -29,14 +29,26 @@ const app = new Vue({
         // funzione incremento index al click:
 
         increaseIndex() {
-            this.indexStart++;
+            // -1 perché l'index viene analizzato al click:
+
+            const maxIndex = this.images.length - 1;
+            if (this.indexStart === maxIndex) {
+                this.indexStart = 0;
+            } else {
+                this.indexStart++;
+            }
         },
 
         // funzione decremento index al click:
 
         decreaseIndex() {
-            this.indexStart--;
-        }
+            const maxIndex = this.images.length - 1;
+            if (this.indexStart === 0) {
+                this.indexStart = maxIndex;
+            } else {
+                this.indexStart--;
+            }
+        },
     },
 
 });
