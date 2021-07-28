@@ -41,8 +41,8 @@
                         <div id="dots-menu" class=" d-flex align-items-center justify-content-center">
 
                             <!--stampo 4 dots utilizzando il ciclo for-->
-                            <div v-for="(dot, index) in images" class="dot mx-2 cursor-pointer"
-                                :class="isActive(index)">
+                            <div v-for="(dot, index) in images" class="dot mx-2 cursor-pointer" :class="isActive(index)"
+                                @click="setIndex(index)">
                             </div>
                         </div>
                     </figure>

@@ -49,6 +49,10 @@ const app = new Vue({
                 this.indexStart--;
             }
         },
+
+        setIndex(changedIndex) {
+            this.indexStart = changedIndex;
+        },
     },
 
 });
