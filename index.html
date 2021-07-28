@@ -28,14 +28,15 @@
     <!-- Inizializzazione Vue: -->
     <div id="app">
 
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-2 d-flex align-items-center justify-content-center">
                     <i class="fas fa-arrow-circle-left fa-3x cursor-pointer"></i>
                 </div>
                 <div class="col-8">
                     <figure class="slider d-flex align-items-center justify-content-center">
-                        <img src="" alt="Immagine Dinamica">
+                        <img class="img-fluid" v-for="(url, index) in images" :src="url" :class="isActive(index)"
+                            alt="Immagine Dinamica">
                     </figure>
                 </div>
                 <div class="col-2 d-flex align-items-center justify-content-center">

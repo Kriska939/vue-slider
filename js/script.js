@@ -11,6 +11,7 @@ Vue.config.devtools = true;
 const app = new Vue({
     el: "#app",
     data: {
+        indexStart: 0,
         images: [
             "./img/image1.jpg",
             "./img/image2.jpg",
@@ -19,7 +20,9 @@ const app = new Vue({
         ],
     },
     methods: {
-
+        isActive(index) {
+            return this.indexStart === index ? "active" : "";
+        }
     },
 
 });
